@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Immersive sound waves">
+  <defs>
+    <linearGradient id="sw-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0d12"/>
+      <stop offset="100%" stop-color="#151018"/>
+    </linearGradient>
+    <linearGradient id="sw-wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff9a4a"/>
+      <stop offset="50%" stop-color="#ff6600"/>
+      <stop offset="100%" stop-color="#ff3b30"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#sw-bg)"/>
+  <!-- concentric vibrating rings -->
+  <g fill="none" stroke="#ff6600" stroke-opacity="0.25" stroke-width="2">
+    <ellipse cx="320" cy="180" rx="70" ry="70"/>
+    <ellipse cx="320" cy="180" rx="110" ry="110"/>
+    <ellipse cx="320" cy="180" rx="150" ry="150"/>
+    <ellipse cx="320" cy="180" rx="190" ry="190"/>
+  </g>
+  <!-- waveform -->
+  <path d="M40 180
+    C70 120, 90 240, 120 180
+    S170 100, 200 180
+    S250 260, 280 180
+    S330 80, 360 180
+    S410 270, 440 180
+    S490 110, 520 180
+    S570 240, 600 180"
+    fill="none" stroke="url(#sw-wave)" stroke-width="4" stroke-linecap="round"/>
+  <!-- equalizer bars -->
+  <g fill="#ff6600">
+    <rect x="250" y="150" width="10" height="60" rx="3" opacity="0.85"/>
+    <rect x="268" y="130" width="10" height="100" rx="3" opacity="0.95"/>
+    <rect x="286" y="145" width="10" height="70" rx="3" opacity="0.8"/>
+    <rect x="304" y="115" width="10" height="130" rx="3"/>
+    <rect x="322" y="140" width="10" height="80" rx="3" opacity="0.9"/>
+    <rect x="340" y="125" width="10" height="110" rx="3" opacity="0.95"/>
+    <rect x="358" y="155" width="10" height="50" rx="3" opacity="0.75"/>
+    <rect x="376" y="135" width="10" height="90" rx="3" opacity="0.85"/>
+  </g>
+  <circle cx="320" cy="180" r="14" fill="#ff6600"/>
+</svg>

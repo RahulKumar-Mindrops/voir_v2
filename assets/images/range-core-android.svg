@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 660" role="img" aria-label="Android platform visual for Core">
+  <defs>
+    <linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050d09"/>
+      <stop offset="45%" stop-color="#0a1a12"/>
+      <stop offset="100%" stop-color="#0e2217"/>
+    </linearGradient>
+    <radialGradient id="cglow" cx="50%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#3ddc84" stop-opacity="0.32"/>
+      <stop offset="55%" stop-color="#3ddc84" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#3ddc84" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cgreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9af5c4"/>
+      <stop offset="50%" stop-color="#3ddc84"/>
+      <stop offset="100%" stop-color="#1fa865"/>
+    </linearGradient>
+    <linearGradient id="ctv" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#152a1e"/>
+      <stop offset="100%" stop-color="#0a1610"/>
+    </linearGradient>
+    <linearGradient id="cscreen" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#1b3d2a"/>
+      <stop offset="50%" stop-color="#0f2418"/>
+      <stop offset="100%" stop-color="#163528"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="660" fill="url(#cbg)"/>
+  <ellipse cx="480" cy="290" rx="340" ry="220" fill="url(#cglow)"/>
+
+  <!-- subtle orbit rings -->
+  <g fill="none" stroke="#3ddc84" stroke-opacity="0.14" stroke-width="1.5">
+    <ellipse cx="480" cy="310" rx="280" ry="280"/>
+    <ellipse cx="480" cy="310" rx="340" ry="200"/>
+  </g>
+
+  <!-- floating app nodes -->
+  <g>
+    <circle cx="210" cy="180" r="22" fill="#3ddc84" opacity="0.22"/>
+    <circle cx="210" cy="180" r="10" fill="#7dffb0"/>
+    <circle cx="750" cy="160" r="18" fill="#3ddc84" opacity="0.18"/>
+    <circle cx="750" cy="160" r="8" fill="#9af5c4"/>
+    <circle cx="180" cy="420" r="16" fill="#2bb673" opacity="0.25"/>
+    <circle cx="180" cy="420" r="7" fill="#3ddc84"/>
+    <circle cx="780" cy="450" r="20" fill="#3ddc84" opacity="0.2"/>
+    <circle cx="780" cy="450" r="9" fill="#7dffb0"/>
+  </g>
+  <g stroke="#3ddc84" stroke-opacity="0.2" stroke-width="1.25" fill="none">
+    <path d="M210 180 C300 220, 360 250, 420 280"/>
+    <path d="M750 160 C660 210, 600 250, 540 280"/>
+    <path d="M180 420 C280 380, 340 350, 400 330"/>
+    <path d="M780 450 C680 400, 600 360, 540 340"/>
+  </g>
+
+  <!-- premium slim TV -->
+  <g transform="translate(480 300)">
+    <rect x="-270" y="-155" width="540" height="310" rx="18" fill="#08140e" stroke="#2a4a38" stroke-width="2"/>
+    <rect x="-252" y="-137" width="504" height="274" rx="8" fill="url(#cscreen)"/>
+
+    <!-- Android OS mark: abstract green shield / play mark -->
+    <g transform="translate(0 -10)">
+      <circle r="58" fill="none" stroke="#3ddc84" stroke-opacity="0.35" stroke-width="2"/>
+      <circle r="42" fill="url(#cgreen)" opacity="0.95"/>
+      <!-- simplified antenna hint -->
+      <path d="M-18 -52 L-28 -74 M18 -52 L28 -74" stroke="#9af5c4" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+      <circle cx="-28" cy="-74" r="3.5" fill="#9af5c4"/>
+      <circle cx="28" cy="-74" r="3.5" fill="#9af5c4"/>
+      <!-- eyes -->
+      <circle cx="-14" cy="-8" r="5" fill="#0a1610"/>
+      <circle cx="14" cy="-8" r="5" fill="#0a1610"/>
+      <!-- smile arc -->
+      <path d="M-16 10 Q0 22 16 10" fill="none" stroke="#0a1610" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- content row -->
+    <g transform="translate(0 95)" opacity="0.85">
+      <rect x="-200" y="0" width="90" height="52" rx="8" fill="#3ddc84" opacity="0.55"/>
+      <rect x="-95" y="0" width="90" height="52" rx="8" fill="#2bb673" opacity="0.45"/>
+      <rect x="10" y="0" width="90" height="52" rx="8" fill="#7dffb0" opacity="0.4"/>
+      <rect x="115" y="0" width="90" height="52" rx="8" fill="#1fa865" opacity="0.5"/>
+    </g>
+
+    <!-- stand -->
+    <path d="M-28 160 L28 160 L48 188 L-48 188 Z" fill="#14281c"/>
+    <rect x="-70" y="188" width="140" height="8" rx="2" fill="#1c3526"/>
+  </g>
+
+  <!-- bottom status chip -->
+  <g transform="translate(480 575)">
+    <rect x="-110" y="-18" width="220" height="36" rx="18" fill="#102218" stroke="#3ddc84" stroke-opacity="0.4" stroke-width="1.25"/>
+    <circle cx="-78" cy="0" r="7" fill="#3ddc84"/>
+    <text x="-58" y="5" fill="#c8f5dc" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="1.5">Android 14</text>
+  </g>
+</svg>

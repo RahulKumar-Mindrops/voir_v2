@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Pure picture clarity">
+  <defs>
+    <linearGradient id="pp-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#171717"/>
+    </linearGradient>
+    <linearGradient id="pp-glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.04"/>
+    </linearGradient>
+    <radialGradient id="pp-focus" cx="50%" cy="48%" r="35%">
+      <stop offset="0%" stop-color="#ff6600" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#ff6600" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#pp-bg)"/>
+  <ellipse cx="320" cy="175" rx="180" ry="120" fill="url(#pp-focus)"/>
+  <!-- viewfinder frame -->
+  <rect x="150" y="70" width="340" height="220" rx="8" fill="none" stroke="#fff" stroke-opacity="0.35" stroke-width="2"/>
+  <path d="M150 110 V70 H190 M450 70 H490 V110 M490 250 V290 H450 M190 290 H150 V250" stroke="#ff6600" stroke-width="3" fill="none" stroke-linecap="square"/>
+  <!-- lens rings -->
+  <circle cx="320" cy="180" r="78" fill="none" stroke="#fff" stroke-opacity="0.25" stroke-width="2"/>
+  <circle cx="320" cy="180" r="58" fill="url(#pp-glass)" stroke="#fff" stroke-opacity="0.4" stroke-width="2"/>
+  <circle cx="320" cy="180" r="28" fill="none" stroke="#ff6600" stroke-width="2"/>
+  <circle cx="320" cy="180" r="6" fill="#ff6600"/>
+  <!-- detail grid -->
+  <g stroke="#fff" stroke-opacity="0.12" stroke-width="1">
+    <path d="M220 180 H420 M320 100 V260"/>
+  </g>
+</svg>

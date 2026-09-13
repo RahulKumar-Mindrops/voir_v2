@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 660" role="img" aria-label="AI Google TV platform visual for Vantage">
+  <defs>
+    <linearGradient id="van-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090714"/>
+      <stop offset="50%" stop-color="#12102a"/>
+      <stop offset="100%" stop-color="#1a1030"/>
+    </linearGradient>
+    <linearGradient id="van-ai" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5b8def"/>
+      <stop offset="45%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="van-g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4285f4"/>
+      <stop offset="32%" stop-color="#34a853"/>
+      <stop offset="64%" stop-color="#fbbc05"/>
+      <stop offset="100%" stop-color="#ea4335"/>
+    </linearGradient>
+    <radialGradient id="van-core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c4b5fd"/>
+      <stop offset="40%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#5b8def" stop-opacity="0.2"/>
+    </radialGradient>
+    <radialGradient id="van-glow" cx="50%" cy="42%" r="45%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="960" height="660" fill="url(#van-bg)"/>
+  <ellipse cx="480" cy="280" rx="300" ry="200" fill="url(#van-glow)"/>
+  <!-- neural network -->
+  <g stroke="#8b5cf6" stroke-opacity="0.35" stroke-width="1.5" fill="none">
+    <path d="M280 180 L400 240 L520 160 L640 220"/>
+    <path d="M300 320 L400 240 L480 340 L580 260 L660 340"/>
+    <path d="M360 420 L480 340 L600 420"/>
+    <path d="M400 240 L480 340 M520 160 L580 260"/>
+  </g>
+  <g>
+    <circle cx="280" cy="180" r="8" fill="#5b8def"/>
+    <circle cx="400" cy="240" r="11" fill="#8b5cf6"/>
+    <circle cx="520" cy="160" r="8" fill="#ec4899"/>
+    <circle cx="640" cy="220" r="9" fill="#5b8def"/>
+    <circle cx="300" cy="320" r="7" fill="#a78bfa"/>
+    <circle cx="480" cy="340" r="14" fill="url(#van-core)"/>
+    <circle cx="580" cy="260" r="8" fill="#ec4899"/>
+    <circle cx="660" cy="340" r="8" fill="#5b8def"/>
+    <circle cx="360" cy="420" r="7" fill="#8b5cf6"/>
+    <circle cx="600" cy="420" r="7" fill="#f472b6"/>
+  </g>
+  <!-- AI chip -->
+  <g transform="translate(480 340)">
+    <rect x="-56" y="-56" width="112" height="112" rx="16" fill="#150f28" stroke="url(#van-ai)" stroke-width="2.5"/>
+    <rect x="-36" y="-36" width="72" height="72" rx="10" fill="url(#van-ai)" opacity="0.25"/>
+    <circle r="18" fill="url(#van-core)"/>
+    <circle r="7" fill="#fff" opacity="0.9"/>
+    <!-- pins -->
+    <g stroke="#a78bfa" stroke-width="2.5" stroke-linecap="round">
+      <path d="M-28 -56 V-78 M0 -56 V-82 M28 -56 V-78"/>
+      <path d="M-28 56 V78 M0 56 V82 M28 56 V78"/>
+      <path d="M-56 -28 H-78 M-56 0 H-82 M-56 28 H-78"/>
+      <path d="M56 -28 H78 M56 0 H82 M56 28 H78"/>
+    </g>
+  </g>
+  <!-- Google TV strip + AI badge -->
+  <g transform="translate(72 72)">
+    <rect width="168" height="36" rx="18" fill="url(#van-ai)"/>
+    <text x="84" y="23" text-anchor="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="2">AI GOOGLE TV</text>
+  </g>
+  <rect x="72" y="120" width="160" height="4" rx="2" fill="url(#van-g)"/>
+  <!-- smart home / assistant cues -->
+  <g transform="translate(780 480)" opacity="0.9">
+    <rect x="-70" y="-50" width="140" height="100" rx="16" fill="#1a1430" stroke="#8b5cf6" stroke-opacity="0.5" stroke-width="1.5"/>
+    <circle cy="-10" r="16" fill="none" stroke="url(#van-ai)" stroke-width="2.5"/>
+    <path d="M-8 8 Q0 18 8 8" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <text y="42" text-anchor="middle" fill="#c4b5fd" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="1">ASSISTANT</text>
+  </g>
+  <text x="72" y="160" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="2" opacity="0.5">SMARTER EVERY SCENE</text>
+</svg>
