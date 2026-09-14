@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-100 -75 200 155" role="img" aria-label="Android">
+  <!-- Official Android robot head (Google). Brand green #3DDC84.
+       The Android robot is reproduced or modified from work created and shared by Google
+       and used according to terms described in the Creative Commons 3.0 Attribution License. -->
+  <g fill="#3DDC84">
+    <use xlink:href="#a" transform="scale(-1,1)"/>
+    <g id="a" stroke="#0d2418" stroke-width="7.2">
+      <rect rx="6.5" transform="rotate(29)" height="86" width="13" y="-86" x="14"/>
+    </g>
+    <ellipse cy="41" rx="91" ry="84"/>
+  </g>
+  <g stroke="#0d2418" stroke-width="7.2" fill="#0d2418">
+    <path d="m-95 44.5h190"/>
+    <circle cx="-42" r="4"/>
+    <circle cx="42" r="4"/>
+  </g>
+</svg>

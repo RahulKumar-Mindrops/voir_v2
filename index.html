@@ -259,23 +259,14 @@
 
         <div class="purpose__visual reveal-image">
           <div class="media-frame">
-            <video
-              class="purpose__video media-video"
-              muted
-              loop
-              playsinline
-              preload="metadata"
-              poster="assets/images/purpose.jpg"
-            >
-              <source src="assets/video/374328_medium.mp4" type="video/mp4" />
-            </video>
+            <img
+              class="purpose__img"
+              src="assets/images/purpose.jpg"
+              alt="VOIR purpose"
+            />
             <span class="media-grain" aria-hidden="true"></span>
             <span class="media-frame__glow" aria-hidden="true"></span>
           </div>
-          <aside class="purpose__aside">
-            <span class="purpose__aside-line" aria-hidden="true"></span>
-            <p>A brighter tomorrow begins with a different point of view.</p>
-          </aside>
         </div>
       </div>
     </section>
@@ -363,6 +354,16 @@
               </video>
               <span class="media-grain media-grain--soft" aria-hidden="true"></span>
               <p class="range-panel__overlay-label">Brilliant colour for everyday entertainment</p>
+              <div class="range-panel__os-badge" aria-label="Android TV">
+                <img
+                  class="range-panel__os-badge-logo"
+                  src="assets/images/android-logo.svg"
+                  alt=""
+                  width="56"
+                  height="46"
+                />
+                <span class="range-panel__os-badge-text">Android TV</span>
+              </div>
               <button type="button" class="range-panel__play" data-range-play aria-label="Play Core video">
                 <span class="range-panel__play-icon" aria-hidden="true">
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -389,7 +390,7 @@
                 <li class="pill pill--android">Android 14</li>
                 <li>100+ Live Channels</li>
               </ul>
-              <p class="range-panel__sizes">32″ &nbsp; 40″ &nbsp; 43″ &nbsp; 55″ &nbsp; 65″</p>
+              <p class="range-panel__sizes">32 &nbsp; 40 &nbsp; 43 &nbsp; 55 &nbsp; 65</p>
               <div class="range-panel__actions">
                 <a href="#range" class="range-panel__btn">
                   Explore Core
@@ -469,6 +470,16 @@
               </video>
               <span class="media-grain media-grain--soft" aria-hidden="true"></span>
               <p class="range-panel__overlay-label">Your world, more personalised</p>
+              <div class="range-panel__os-badge range-panel__os-badge--google" aria-label="Google TV">
+                <img
+                  class="range-panel__os-badge-logo"
+                  src="assets/images/google-logo.svg"
+                  alt=""
+                  width="46"
+                  height="46"
+                />
+                <span class="range-panel__os-badge-text">Google TV</span>
+              </div>
               <button type="button" class="range-panel__play" data-range-play aria-label="Play Zenith video">
                 <span class="range-panel__play-icon" aria-hidden="true">
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -495,7 +506,7 @@
                 <li>Voice Control</li>
                 <li>Personalised Home</li>
               </ul>
-              <p class="range-panel__sizes">43″ &nbsp; 50″ &nbsp; 55″ &nbsp; 65″ &nbsp; 75″</p>
+              <p class="range-panel__sizes">32 &nbsp; 43 &nbsp; 55 &nbsp; 65</p>
               <div class="range-panel__actions">
                 <a href="#range" class="range-panel__btn">
                   Explore Zenith
@@ -600,13 +611,8 @@
                 <li>AI Sound</li>
                 <li>Smart Home</li>
               </ul>
-              <p class="range-panel__sizes">55″ &nbsp; 65″ &nbsp; 75″ &nbsp; 85″</p>
               <div class="range-panel__actions">
-                <a href="#range" class="range-panel__btn">
-                  Explore Vantage
-                  <span aria-hidden="true">→</span>
-                </a>
-                <a href="#range" class="range-panel__link">Compare Series</a>
+                <span class="range-panel__coming-soon">Coming Soon</span>
               </div>
               <ul class="range-panel__features">
                 <li>
@@ -1158,16 +1164,11 @@
 
         <div class="moments__media reveal-image">
           <div class="media-frame media-frame--dark">
-            <video
-              class="moments__video media-video"
-              muted
-              loop
-              playsinline
-              preload="metadata"
-              poster="assets/images/lifestyle.jpg"
-            >
-              <source src="assets/video/374328_medium.mp4" type="video/mp4" />
-            </video>
+            <img
+              class="moments__video"
+              src="assets/images/IMG  l.png"
+              alt="Cinema moment with popcorn"
+            />
             <span class="media-grain" aria-hidden="true"></span>
             <span class="media-frame__glow" aria-hidden="true"></span>
           </div>
@@ -1281,6 +1282,35 @@
       </div>
     </section>
 
+    <!-- ===================== WORLD / VISION ===================== -->
+    <section class="vision section-dark" id="vision">
+      <div class="vision__bg" aria-hidden="true">
+        <img
+          class="vision__bg-img"
+          src="assets/images/Plannet.png"
+          alt=""
+          width="1920"
+          height="1080"
+          loading="lazy"
+        />
+        <span class="vision__bg-veil"></span>
+        <span class="media-grain"></span>
+      </div>
+      <div class="vision__content container">
+        <p class="section-eyebrow section-eyebrow--light reveal">
+          <span>A Brighter Tomorrow</span>
+          <span class="section-eyebrow__line" aria-hidden="true"></span>
+        </p>
+        <h2 class="section-title section-title--light reveal">
+          <span class="section-title__light">Seeing the world</span><br />
+          <span class="section-title__bold">with a clearer view.</span>
+        </h2>
+        <p class="body-text body-text--muted vision__intro reveal">
+          From every home to every horizon — VOIR brings moments closer, clearer, and more alive.
+        </p>
+      </div>
+    </section>
+
     <!-- ===================== 12. BRAND FILM CTA ===================== -->
     <section class="brand-cta section-dark" id="brand-film">
       <div class="brand-cta__media" aria-hidden="true">
@@ -1289,8 +1319,8 @@
           muted
           loop
           playsinline
-          preload="metadata"
-          poster="assets/images/footer-cta.jpg"
+          autoplay
+          preload="auto"
         >
           <source src="assets/video/67358-521707474_medium.mp4" type="video/mp4" />
         </video>
@@ -1305,7 +1335,6 @@
           width="180"
           height="65"
         />
-        <p class="brand-cta__tagline reveal">See it. Love it. Live it.</p>
         <p class="brand-cta__sub reveal">A brighter way to experience what matters.</p>
         <a href="#brand-film" class="btn btn--ghost reveal" id="brand-film-btn">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">

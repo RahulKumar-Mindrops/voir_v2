@@ -86,10 +86,5 @@
     <rect x="-70" y="188" width="140" height="8" rx="2" fill="#1c3526"/>
   </g>
 
-  <!-- bottom status chip -->
-  <g transform="translate(480 575)">
-    <rect x="-110" y="-18" width="220" height="36" rx="18" fill="#102218" stroke="#3ddc84" stroke-opacity="0.4" stroke-width="1.25"/>
-    <circle cx="-78" cy="0" r="7" fill="#3ddc84"/>
-    <text x="-58" y="5" fill="#c8f5dc" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="1.5">Android 14</text>
-  </g>
+  <!-- bottom status chip removed — badge is rendered in HTML with imported Android logo -->
 </svg>

@@ -579,6 +579,21 @@
       sectionIn(care, care.querySelectorAll(".care__copy > *"), { x: 28, y: 0 });
     }
 
+    /* ---- Vision / World ---- */
+    const vision = document.querySelector(".vision");
+    if (vision) {
+      sectionIn(vision, vision.querySelectorAll(".vision__content > *"), { x: -28, y: 0 });
+      const visionBg = vision.querySelector(".vision__bg-img");
+      if (visionBg) {
+        gsap.from(visionBg, {
+          scale: 1.08,
+          duration: 1.4,
+          ease: "power2.out",
+          scrollTrigger: { trigger: vision, start: "top 80%" },
+        });
+      }
+    }
+
     /* ---- Brand film CTA ---- */
     const brand = document.querySelector(".brand-cta");
     if (brand) {
@@ -808,22 +823,9 @@
     });
 
     document.querySelectorAll("[data-range-play]").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const panel = btn.closest(".range-panel");
-        const video = panel && panel.querySelector(".range-panel__video");
-        const media = panel && panel.querySelector(".range-panel__media");
-        if (!video || !media) return;
-
-        if (media.classList.contains("is-video-focus")) {
-          media.classList.remove("is-video-focus");
-          setPlayButtonState(btn, false);
-          if (!prefersReducedMotion) {
-            const attempt = video.play();
-            if (attempt && typeof attempt.catch === "function") attempt.catch(() => {});
-          }
-        } else {
-          playPanelVideo(panel, { focus: true });
-        }
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        // Play button is decorative — do not start/focus video on click
       });
     });
 
