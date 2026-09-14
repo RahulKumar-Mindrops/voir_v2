@@ -2254,24 +2254,103 @@ button {
   background:
     linear-gradient(
       90deg,
-      rgba(5, 5, 5, 0.88) 0%,
-      rgba(5, 5, 5, 0.55) 42%,
-      rgba(5, 5, 5, 0.18) 68%,
-      rgba(5, 5, 5, 0.35) 100%
+      rgba(5, 5, 5, 0.72) 0%,
+      rgba(5, 5, 5, 0.28) 45%,
+      rgba(5, 5, 5, 0.08) 70%,
+      rgba(5, 5, 5, 0.2) 100%
     ),
-    linear-gradient(180deg, rgba(5, 5, 5, 0.2) 0%, transparent 30%, rgba(5, 5, 5, 0.45) 100%);
+    linear-gradient(180deg, rgba(5, 5, 5, 0.15) 0%, transparent 35%, rgba(5, 5, 5, 0.35) 100%);
 }
 
-.vision__content {
+.vision__layout {
   position: relative;
   z-index: 1;
-  max-width: 32rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
   padding-block: clamp(3.5rem, 8vw, 6rem);
 }
 
-.vision__intro {
-  max-width: 36ch;
-  margin-top: 0.35rem;
+.vision__copy {
+  max-width: 28rem;
+}
+
+.vision__eyebrow {
+  margin: 0 0 0.85rem;
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.vision__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 0.95;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.vision__subtitle {
+  margin: 0.55rem 0 0;
+  font-family: var(--font-sans);
+  font-size: clamp(0.95rem, 1.8vw, 1.2rem);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.vision__meta {
+  margin: 0.55rem 0 0;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.vision__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.35rem;
+  border-radius: 999px;
+  border: 1.5px solid rgba(255, 255, 255, 0.9);
+  background: transparent;
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.vision__cta:hover {
+  background: #fff;
+  color: #050505;
+}
+
+.vision__aside {
+  margin: 0;
+  align-self: flex-start;
+  padding-top: 0.35rem;
+  text-align: right;
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  line-height: 1.55;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 /* ---------- 12. Brand CTA ---------- */
@@ -2591,6 +2670,16 @@ button {
 
   .vision__bg-img {
     object-position: 62% center;
+  }
+
+  .vision__layout {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .vision__aside {
+    align-self: flex-end;
+    text-align: right;
   }
 
   .purpose__aside {

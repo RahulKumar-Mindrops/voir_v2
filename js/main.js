@@ -582,7 +582,7 @@
     /* ---- Vision / World ---- */
     const vision = document.querySelector(".vision");
     if (vision) {
-      sectionIn(vision, vision.querySelectorAll(".vision__content > *"), { x: -28, y: 0 });
+      sectionIn(vision, vision.querySelectorAll(".vision__copy > *, .vision__aside"), { x: -28, y: 0 });
       const visionBg = vision.querySelector(".vision__bg-img");
       if (visionBg) {
         gsap.from(visionBg, {
