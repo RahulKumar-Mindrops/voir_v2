@@ -362,16 +362,14 @@ button {
   inset: 0 0 auto 0;
   z-index: 100;
   height: var(--header-h);
-  border-bottom: 1px solid transparent;
   background: linear-gradient(to bottom, rgba(5, 5, 5, 0.55), transparent);
-  transition: background var(--transition), backdrop-filter var(--transition), border-color var(--transition), box-shadow var(--transition);
+  transition: background var(--transition), backdrop-filter var(--transition), box-shadow var(--transition);
 }
 
 .site-header.is-scrolled {
   background: rgba(5, 5, 5, 0.78);
   backdrop-filter: blur(22px) saturate(1.35);
   -webkit-backdrop-filter: blur(22px) saturate(1.35);
-  border-bottom-color: rgba(255, 255, 255, 0.06);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.28);
 }
 
@@ -2226,11 +2224,9 @@ button {
 /* ---------- World / Vision ---------- */
 .vision {
   position: relative;
-  min-height: clamp(420px, 72vh, 640px);
   display: flex;
   align-items: center;
   overflow: hidden;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .vision__bg {
@@ -2270,7 +2266,7 @@ button {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  padding-block: clamp(3.5rem, 8vw, 6rem);
+  padding-block: clamp(2rem, 4vw, 3rem);
 }
 
 .vision__copy {
@@ -2278,7 +2274,7 @@ button {
 }
 
 .vision__eyebrow {
-  margin: 0 0 0.85rem;
+  margin: 0 0 0.35rem;
   font-family: var(--font-sans);
   font-size: 0.68rem;
   font-weight: 600;
@@ -2290,16 +2286,16 @@ button {
 .vision__title {
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(3rem, 8vw, 5.5rem);
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  line-height: 0.95;
-  text-transform: uppercase;
-  color: #fff;
+  font-size: clamp(1.85rem, 3.6vw, 3rem);
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  line-height: var(--lh-heading);
+  text-transform: none;
+  color: rgba(255, 255, 255, 0.42);
 }
 
 .vision__subtitle {
-  margin: 0.55rem 0 0;
+  margin: 0.35rem 0 0;
   font-family: var(--font-sans);
   font-size: clamp(0.95rem, 1.8vw, 1.2rem);
   font-weight: 600;
@@ -2309,7 +2305,7 @@ button {
 }
 
 .vision__meta {
-  margin: 0.55rem 0 0;
+  margin: 0.4rem 0 0;
   font-family: var(--font-sans);
   font-size: 0.92rem;
   font-weight: 400;
@@ -2320,7 +2316,7 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
-  margin-top: 1.5rem;
+  margin-top: 1.15rem;
   padding: 0.7rem 1.35rem;
   border-radius: 999px;
   border: 1.5px solid rgba(255, 255, 255, 0.9);
@@ -2664,10 +2660,6 @@ button {
     order: -1;
   }
 
-  .vision {
-    min-height: clamp(360px, 70vh, 520px);
-  }
-
   .vision__bg-img {
     object-position: 62% center;
   }
@@ -2675,6 +2667,7 @@ button {
   .vision__layout {
     flex-direction: column;
     align-items: flex-start;
+    padding-block: clamp(1.75rem, 5vw, 2.5rem);
   }
 
   .vision__aside {
